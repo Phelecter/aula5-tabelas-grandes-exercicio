@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 800px;
+            border-collapse: collapse ;
+            /* Obrigatório para ter o título da tabela fixo */
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: #fdfdfd;
+            color: rgb(10, 2, 2);
+        }
+    
+        thead > tr > th {
+            /* No título da linha do cabeçalho vou grudar "sticky" */
+            position: sticky; /* grudar */
+            top: 0; /* na posição 0 */
+            background-color: rgb(251, 249, 249);
+    
+        }
+        td.num {
+            text-align: right;
+        }
+        caption {
+            /* Tamanho da fonte */
+            font-size: 1.5em;
+            /* Para colocar em negrito */
+            font-weight: bold;
+            /* Para deixar mais espaçado */
+            padding: 10px;
+            /* Colocar um fundo no meu caption */
+            background-color: lightgray;
+    
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(246, 242, 242);
+    
+        }
+    </style> 
+</head>       
+<body>
+    <table border="3" width="500" align="center">
+        <caption><b>Populacao dos Estado Brasileiros - 2024</b></caption>
+    <thead>    
+        <tr>
+            <th>Estado</th>
+            <th>Populacao</th>
+            <th>Comando HTML.Ultilizado </th>
+        </tr>
+    </thead>    
+        <tr>
+            <td align="left"><b>Acre</b></td>
+            <td align="right" class="num"><mark>830.018</mark></td>
+            <td>"Negrito" e <mark>"Destacado"</mark></td>
+        </tr>
+        <tr>
+            <td align="left"><i>Alagoas</i></td>
+            <td align="right" class="num">3.365.351</td>
+            <td><i>"Italico"</i></td>
+        </tr>
+        <tr>
+            <td align="left"><u>Amapá</u></td>
+            <td align="right" class="num">877.613</td>
+            <td><u>"Texto sublinhado"</u></td>
+        </tr>
+        <tr>
+            <td align="left"><s>Amazonas</s></td>
+            <td align="right" class="num"><u>4.269.995</u></td>
+            <td><s>"Texto riscado"</s> e <u>"Texto sublinhado"</u></td>
+        </tr>
+        <tr>
+            <td align="left">Bahia</td>
+            <td align="right">14.141.626</td>
+            <td>"Texto sobreescrito"</td>
+        </tr>
+        <tr>
+            <td align="left"><abbr title="CEARA">CE</abbr></td>
+            <td align="right">9.240.580</td>
+            <td>"Abreviação"</td>
+        </tr>
+        <tr>
+            <td align="left"><b>Distrito Federal</b></td>
+            <td align="right">9.098.883</td>
+            <td><b>"Texto em negrito"</b></td>
+        </tr>
+        <tr>
+            <td align="left">"Espirito Santo"</td>
+            <td align="right">4.108.508</td>
+            <td>""Citação Curta""</td>
+        </tr>
+        <tr>
+            <td align="left">"Goias"</td>
+            <td align="right">7.206.589</td>
+            <td>"Citação de fonte"</td>
+        </tr>
+        <tr>
+            <td align="left">Maranhã</td>
+            <td align="right" class="num">6.775.805</td>
+            <td>"Texto monoespaçado"</td>
+        </tr>
+        <tr>
+            <td align="left">Mato Grosso</td>
+            <td align="right">3.658.813</td>
+            <td>"Texto pré-formatado"</td>
+        </tr>
+        <tr>
+            <td align="left">Pareiba</td>
+            <td align="right">4.059.905</td>
+            <td>"Texto pequeno"</td>
+        </tr>
+        <tr>
+            <td align="left">Piaui</td>
+            <td align="right">3.281.480</td>
+            <td>"Texto subscrito"</td>
+        </tr>
+        <tr>
+            <td align="left">Rio de Janeiro</td>
+            <td align="right">16.054.524</td>
+            <td>"Citacao em bloco"</td>
+        </tr>
+        <tr>
+            <td align="left"><b>Rio grande do sul</b></td>
+            <td align="right">10.882.965</td>
+            <td><b>"Negrito"</b></td>
+        </tr>
+        <tr>
+            <td align="left"><i>Rondonia</i></td>
+            <td align="right">1.616.379</td>
+            <td><i>"Italico"</i></td>
+        </tr>
+        <tr>
+            <td align="left"><mark>Roraima</mark></td>
+            <td align="right">626.707</td>
+            <td><mark>"Texto destacado"</mark>""</td>
+        </tr>
+        <tr>
+            <td align="left">TO</td>
+            <td align="right">1.607.363</td>
+            <td>"Abreviação"</td>
+        </tr>
+        <tr>
+            <td align="left"><b>Total de populacao estimada:</b></td>
+            <td align="right"><b>Soma total</b></td>
+            <td>Realizar a soma das colunas</td>
+        </tr>
+     
+    </table>
+
+</body>
+</html>
